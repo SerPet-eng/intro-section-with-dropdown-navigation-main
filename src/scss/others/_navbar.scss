@@ -1,0 +1,10 @@
+.nav {
+  display: flex;
+  .nav__title {
+    margin-right: auto;
+  }
+  .nav__menu {
+    height: 100%;
+    align-self: center;
+  }
+}
