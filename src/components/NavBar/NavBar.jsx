@@ -6,7 +6,7 @@ export default function NavBar() {
       <nav className="nav">
         <h1 className="nav__title">snap</h1>
         <img src={MenuIcon} alt="A menu icon" className="nav__menu" />
-        {/* <div className="menu">
+        <div className="menu">
           <ul>
             <li>Features</li>
             <li>Company</li>
@@ -17,7 +17,7 @@ export default function NavBar() {
             <button className="button">Login</button>
             <button className="button">Register</button>
           </div>
-        </div> */}
+        </div>
       </nav>
     </>
   );

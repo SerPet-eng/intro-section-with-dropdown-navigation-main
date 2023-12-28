@@ -1,6 +1,7 @@
 .nav {
   display: flex;
   padding: 1rem 0.9rem;
+  position: relative;
 }
 .nav .nav__title {
   margin-right: auto;
@@ -10,6 +11,33 @@
 .nav .nav__menu {
   height: 100%;
   align-self: center;
+  background-color: red;
+}
+
+.menu {
+  background-color: hsla(0, 0%, 50%, 0.5);
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 2rem;
+  width: 65%;
+}
+.menu ul {
+  display: block;
+  padding: 0;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu .nav__btn-section {
+  display: grid;
+}
+@media only screen and (min-width: 600px) {
+  .menu {
+    display: flex;
+  }
 }
 
 body {
