@@ -5,7 +5,7 @@ export default function Body() {
   return (
     <>
       <picture>
-        <source media="(min-width: 650px)" srcSet={ImageDesktop} />
+        <source media="(min-width: 800px)" srcSet={ImageDesktop} />
         <img src={ImageMobile} alt="Man holding a laptop" />
       </picture>
       <section className="section">

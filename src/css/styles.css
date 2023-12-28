@@ -153,4 +153,10 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+@media (min-width: 800px) {
+  body {
+    background-color: red;
+  }
 }/*# sourceMappingURL=styles.css.map */
