@@ -43,6 +43,20 @@ body {
   padding: 0.6em 1.25em;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem auto;
+}
+.footer #databiz,
+.footer #meet,
+.footer #maker {
+  height: calc(0.9rem + 1vh);
+}
+.footer #audiophile {
+  height: calc(1.6rem + 1vh);
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */

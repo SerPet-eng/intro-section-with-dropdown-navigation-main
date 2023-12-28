@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem auto;
+  #databiz,
+  #meet,
+  #maker {
+    height: calc(0.9rem + 1vh);
+  }
+  #audiophile {
+    height: calc(1.6rem + 1vh);
+  }
+}
