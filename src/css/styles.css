@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   width: 100vw;
-  margin: auto 5rem;
+  margin: auto 0 auto 5rem;
 }
 .nav .menu ul {
   display: flex;
@@ -30,7 +30,15 @@
   flex: 1;
 }
 .nav .menu .nav__btn-section {
+  display: flex;
+  gap: 1rem;
   margin-left: auto;
+}
+.nav .menu .nav__btn-section .button {
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5em 1.5em;
+  background-color: hsl(0, 0%, 98%);
 }
 
 body {

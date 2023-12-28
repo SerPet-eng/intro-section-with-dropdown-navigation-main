@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     width: 100vw;
-    margin: auto 5rem;
+    margin: auto 0 auto 5rem;
     ul {
       display: flex;
       gap: 2rem;
@@ -30,7 +30,15 @@
       }
     }
     .nav__btn-section {
+      display: flex;
+      gap: 1rem;
       margin-left: auto;
+      .button {
+        border: none;
+        border-radius: 1rem;
+        padding: 0.5em 1.5em;
+        background-color: $clr-neutral-900;
+      }
     }
   }
 }
