@@ -1,11 +1,10 @@
-import MenuIcon from '../../../images/icon-menu.svg';
+// import MenuIcon from '../../../images/icon-menu.svg';
 
 export default function NavBar() {
   return (
     <>
       <nav className="nav">
         <h1 className="nav__title">snap</h1>
-        <img src={MenuIcon} alt="A menu icon" className="nav__menu" />
         <div className="menu">
           <ul>
             <li>Features</li>
@@ -18,6 +17,7 @@ export default function NavBar() {
             <button className="button">Register</button>
           </div>
         </div>
+        {/* <img src={MenuIcon} alt="A menu icon" className="nav__menu" /> */}
       </nav>
     </>
   );

@@ -1,10 +1,10 @@
 .nav {
   display: flex;
+  align-items: center;
   padding: 1rem 0.9rem;
   position: relative;
 }
 .nav .nav__title {
-  margin-right: auto;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -13,31 +13,24 @@
   align-self: center;
   background-color: red;
 }
-
-.menu {
-  background-color: hsla(0, 0%, 50%, 0.5);
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  padding: 2rem;
-  width: 65%;
+.nav .menu {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  margin: auto 5rem;
 }
-.menu ul {
-  display: block;
+.nav .menu ul {
+  display: flex;
+  gap: 2rem;
   padding: 0;
+  margin-right: auto;
 }
-.menu ul li {
+.nav .menu ul li {
   list-style: none;
+  flex: 1;
 }
-.menu .nav__btn-section {
-  display: grid;
-}
-@media only screen and (min-width: 600px) {
-  .menu {
-    display: flex;
-  }
+.nav .menu .nav__btn-section {
+  margin-left: auto;
 }
 
 body {
