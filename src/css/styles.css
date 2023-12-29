@@ -159,4 +159,18 @@ h6 {
   body {
     background-color: red;
   }
+}
+
+@media (max-width: 800px) {
+  .nav .menu {
+    display: none;
+  }
+}
+.nav .nav__menu {
+  display: block;
+}
+@media (min-width: 800px) {
+  .nav .nav__menu {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

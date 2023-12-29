@@ -3,3 +3,17 @@ body {
     background-color: red;
   }
 }
+
+.nav {
+  .menu {
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+  .nav__menu {
+    display: block;
+    @media (min-width: 800px) {
+      display: none;
+    }
+  }
+}
