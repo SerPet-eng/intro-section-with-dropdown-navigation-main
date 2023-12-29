@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import MenuIcon from '../../../images/icon-menu.svg';
+import CloseIcon from '../../../images/icon-close-menu.svg';
 
 export default function NavBar() {
   const [active, setActive] = useState(false);
@@ -18,6 +19,7 @@ export default function NavBar() {
       <nav className="nav">
         <h1 className="nav__title">snap</h1>
         <div className="menu" style={showDisplay}>
+          <img src={CloseIcon} alt="A close icon" onClick={toggleButton} />
           <ul>
             <li>Features</li>
             <li>Company</li>
