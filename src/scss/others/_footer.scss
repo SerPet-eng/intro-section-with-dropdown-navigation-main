@@ -1,13 +1,18 @@
 .footer {
-  display: flex;
-  justify-content: space-around;
-  margin: 1rem auto;
-  #databiz,
-  #meet,
-  #maker {
-    height: calc(0.9rem + 0.5vh);
-  }
-  #audiophile {
-    height: calc(1.6rem + 0.5vh);
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 1.5rem;
+    li {
+      list-style: none;
+      img {
+        width: 5rem;
+      }
+      #audiophile {
+        width: 3rem;
+      }
+    }
   }
 }

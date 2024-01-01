@@ -1,32 +1,24 @@
 @use '../variables/variables.scss' as *;
 
-body {
-  font-family: 'Epilogue', sans-serif;
-  font-weight: $fw-500;
-  font-size: 1.125rem;
-  background-color: $clr-neutral-900;
-}
-
-.section {
+.section__hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  .section__title {
-    margin: 2.5rem auto 1rem auto;
+  .hero__title {
     font-size: 2.125rem;
+    margin-top: 3rem;
   }
-  .section__desc {
-    color: $clr-neutral-400;
+  .hero__desc {
+    margin: 1rem;
     font-size: 1rem;
-    margin: auto 1rem;
   }
-  .section__btn {
-    margin: 2rem auto;
-    background-color: $clr-neutral-100;
-    color: $clr-neutral-900;
+  .hero__btn {
+    margin: 1rem auto 2rem auto;
+    padding: 0.6em 1.5em;
     border: none;
+    color: $clr-neutral-900;
+    background-color: $clr-neutral-100;
     border-radius: 1rem;
-    padding: 0.6em 1.25em;
   }
 }
