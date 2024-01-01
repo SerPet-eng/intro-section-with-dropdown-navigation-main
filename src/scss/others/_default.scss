@@ -1,0 +1,8 @@
+@use '../variables/variables.scss' as *;
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: $fw-500;
+  font-size: 1.125rem;
+  background-color: $clr-neutral-900;
+}
