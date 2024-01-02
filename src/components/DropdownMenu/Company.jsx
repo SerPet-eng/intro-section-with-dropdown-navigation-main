@@ -1,7 +1,11 @@
 export default function Company() {
   return (
     <>
-      <h1>Company</h1>
+      <ul>
+        <li>History</li>
+        <li>Our Team</li>
+        <li>Blog</li>
+      </ul>
     </>
   );
 }
