@@ -12,10 +12,11 @@
       height: 100dvh;
       width: 65%;
       position: absolute;
-      top: -100%;
-      right: 0;
+      top: 5rem;
+      right: -100%;
       background-color: $clr-neutral-900;
       padding: 1.5rem;
+      transition: right 0.3s ease-in-out;
       ul {
         padding: 0;
         li {
@@ -40,7 +41,7 @@
       }
     }
     .open {
-      top: 5rem;
+      right: 0;
       z-index: 1;
     }
   }

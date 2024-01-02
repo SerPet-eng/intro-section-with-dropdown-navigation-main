@@ -17,10 +17,11 @@ body {
   height: 100dvh;
   width: 65%;
   position: absolute;
-  top: -100%;
-  right: 0;
+  top: 5rem;
+  right: -100%;
   background-color: hsl(0, 0%, 98%);
   padding: 1.5rem;
+  transition: right 0.3s ease-in-out;
 }
 .header .nav .menu ul {
   padding: 0;
@@ -45,7 +46,7 @@ body {
   border-radius: 1rem;
 }
 .header .nav .open {
-  top: 5rem;
+  right: 0;
   z-index: 1;
 }
 
