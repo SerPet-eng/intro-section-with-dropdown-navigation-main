@@ -1,4 +1,4 @@
-// import ArrowUp from '../../../images/icon-arrow-up.svg';
+import ArrowUp from '../../../images/icon-arrow-up.svg';
 import ArrowDown from '../../../images/icon-arrow-down.svg';
 import Features from './Features';
 import Company from './Company';
@@ -23,14 +23,22 @@ export default function Dropdown() {
       <ul>
         <li onClick={toggleFeatures}>
           Features{' '}
-          <img src={ArrowDown} alt="Arrow down icon" className="arrow" />
+          {isFeatures ? (
+            <img src={ArrowUp} alt="Arrow up icon" className="arrow" />
+          ) : (
+            <img src={ArrowDown} alt="Arrow down icon" className="arrow" />
+          )}
         </li>
-        <Features />
+        {isFeatures && <Features />}
         <li onClick={toggleCompany}>
           Company{' '}
-          <img src={ArrowDown} alt="Arrow down icon" className="arrow" />
+          {isCompany ? (
+            <img src={ArrowUp} alt="Arrow up icon" className="arrow" />
+          ) : (
+            <img src={ArrowDown} alt="Arrow down icon" className="arrow" />
+          )}
         </li>
-        <Company />
+        {isCompany && <Company />}
         <li>Careers</li>
         <li>About</li>
       </ul>
