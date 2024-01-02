@@ -22,13 +22,15 @@ export default function Dropdown() {
     <>
       <ul>
         <li onClick={toggleFeatures}>
-          Features <img src={ArrowDown} alt="Arrow down icon" />
-          <Features />
+          Features{' '}
+          <img src={ArrowDown} alt="Arrow down icon" className="arrow" />
         </li>
+        <Features />
         <li onClick={toggleCompany}>
-          Company <img src={ArrowDown} alt="Arrow down icon" />
-          <Company />
+          Company{' '}
+          <img src={ArrowDown} alt="Arrow down icon" className="arrow" />
         </li>
+        <Company />
         <li>Careers</li>
         <li>About</li>
       </ul>

@@ -26,7 +26,13 @@ body {
   padding: 0;
 }
 .header .nav .menu ul li {
+  display: flex;
+  align-items: center;
   list-style: none;
+  gap: 1rem;
+}
+.header .nav .menu ul li .arrow {
+  height: 100%;
 }
 .header .nav .menu__btn {
   display: grid;
