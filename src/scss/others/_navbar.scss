@@ -23,6 +23,7 @@
           align-items: center;
           list-style: none;
           gap: 1rem;
+          margin-bottom: 1rem;
           .arrow {
             height: 100%;
           }
@@ -31,6 +32,7 @@
     }
     .menu__btn {
       display: grid;
+      gap: 1rem;
     }
     .open {
       top: 5rem;

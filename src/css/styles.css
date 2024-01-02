@@ -30,12 +30,14 @@ body {
   align-items: center;
   list-style: none;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 .header .nav .menu ul li .arrow {
   height: 100%;
 }
 .header .nav .menu__btn {
   display: grid;
+  gap: 1rem;
 }
 .header .nav .open {
   top: 5rem;
@@ -149,4 +151,17 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.features,
+.company {
+  margin: 0.3rem 0.3rem 0.3rem 1rem;
+}
+.features ul li,
+.company ul li {
+  margin-bottom: 1rem;
+}
+.features img,
+.company img {
+  width: 12%;
 }/*# sourceMappingURL=styles.css.map */
