@@ -39,6 +39,11 @@ body {
   display: grid;
   gap: 1rem;
 }
+.header .nav .menu__btn button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 1rem;
+}
 .header .nav .open {
   top: 5rem;
   z-index: 1;
