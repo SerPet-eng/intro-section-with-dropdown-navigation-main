@@ -1,5 +1,7 @@
 // import ArrowUp from '../../../images/icon-arrow-up.svg';
 import ArrowDown from '../../../images/icon-arrow-down.svg';
+import Features from './Features';
+import Company from './Company';
 import { useState } from 'react';
 
 export default function Dropdown() {
@@ -21,9 +23,11 @@ export default function Dropdown() {
       <ul>
         <li onClick={toggleFeatures}>
           Features <img src={ArrowDown} alt="Arrow down icon" />
+          <Features />
         </li>
         <li onClick={toggleCompany}>
           Company <img src={ArrowDown} alt="Arrow down icon" />
+          <Company />
         </li>
         <li>Careers</li>
         <li>About</li>
