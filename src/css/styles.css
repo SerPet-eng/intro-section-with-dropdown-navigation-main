@@ -22,6 +22,7 @@ body {
   background-color: hsl(0, 0%, 98%);
   padding: 1.5rem;
   transition: right 0.3s ease-in-out;
+  color: hsl(0, 0%, 41%);
 }
 .header .nav .menu ul {
   padding: 0;
@@ -41,6 +42,7 @@ body {
   gap: 1rem;
 }
 .header .nav .menu__btn button {
+  color: hsl(0, 0%, 41%);
   padding: 0.5em 1em;
   border: none;
   border-radius: 1rem;

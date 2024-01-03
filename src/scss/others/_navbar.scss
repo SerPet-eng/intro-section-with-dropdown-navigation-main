@@ -17,6 +17,7 @@
       background-color: $clr-neutral-900;
       padding: 1.5rem;
       transition: right 0.3s ease-in-out;
+      color: $clr-neutral-400;
       ul {
         padding: 0;
         li {
@@ -35,6 +36,7 @@
       display: grid;
       gap: 1rem;
       button {
+        color: $clr-neutral-400;
         padding: 0.5em 1em;
         border: none;
         border-radius: 1rem;
