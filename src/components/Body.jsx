@@ -1,5 +1,9 @@
 import ImageDesktop from '../../images/image-hero-desktop.png';
 import ImageMobile from '../../images/image-hero-mobile.png';
+import Databiz from '../../images/client-databiz.svg';
+import Audiophile from '../../images/client-audiophile.svg';
+import Meet from '../../images/client-meet.svg';
+import Maker from '../../images/client-maker.svg';
 
 export default function Body() {
   return (
@@ -16,6 +20,25 @@ export default function Body() {
             processes, create team rituals, and watch productivity soar.
           </p>
           <button className="hero__btn">Learn more</button>
+          <ul className="icons">
+            <li className="icons__item">
+              <img className="item-img" src={Databiz} alt="A Databiz Icon" />
+            </li>
+            <li className="icons__item">
+              <img
+                className="item-img"
+                src={Audiophile}
+                alt="A Audiophile Icon"
+                id="audiophile"
+              />
+            </li>
+            <li className="icons__item">
+              <img className="item-img" src={Meet} alt="A Meet Icon" />
+            </li>
+            <li className="icons__item">
+              <img className="item-img" src={Maker} alt="A Maker Icon" />
+            </li>
+          </ul>
         </div>
       </section>
     </>

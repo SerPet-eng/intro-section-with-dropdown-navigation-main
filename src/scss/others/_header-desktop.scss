@@ -1,0 +1,43 @@
+@use '../variables/variables.scss' as *;
+
+.header-desktop {
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+
+  .menu-desktop {
+    margin-left: 2rem;
+    position: relative;
+    .menu__content-desktop {
+      display: flex;
+      gap: 0.5rem;
+      padding: 0;
+      .menu__list-desktop {
+        list-style: none;
+        .menu__btn-desktop {
+          color: $clr-neutral-400;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background-color: $clr-neutral-900;
+          padding: 1em;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .menu__form-desktop {
+    margin-left: auto;
+    .form__btn-desktop {
+      color: $clr-neutral-400;
+      background-color: $clr-neutral-900;
+      margin-right: 1rem;
+      padding: 1em 2em;
+      border: none;
+      border-radius: 1.25rem;
+      cursor: pointer;
+    }
+  }
+}

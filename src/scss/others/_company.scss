@@ -1,28 +1,22 @@
 @use '../variables/variables.scss' as *;
 
-.features {
+.company {
   padding: 1rem;
   color: $clr-neutral-400;
   @media (min-width: 950px) {
     background-color: $clr-neutral-900;
-    padding: 2rem;
+    padding: 2rem 2rem 0.9rem 2rem;
     position: absolute;
     top: 80%;
-    left: -3rem;
+    left: 10rem;
     border-radius: 1.25rem;
     box-shadow: 0 0 10px $clr-neutral-100;
   }
-  .features__content {
+  .company__content {
     list-style: none;
     padding: 0;
-    .features__list {
-      display: flex;
-      align-items: start;
+    .content {
       margin-bottom: 1rem;
-      gap: 1rem;
-      .content__icon {
-        width: 1.25rem;
-      }
     }
   }
 }

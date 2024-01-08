@@ -1,31 +1,24 @@
-import MenuIcon from '../../images/icon-menu.svg';
-import CloseIcon from '../../images/icon-close-menu.svg';
-import Dropdown from './DropdownMenu/Dropdown';
-import { useState } from 'react';
+import HeaderDesktop from './Header/HeaderDesktop';
+import HeaderMobile from './Header/HeaderMobile';
+import { useEffect, useState } from 'react';
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 950);
 
-  const handleSideMenu = () => {
-    setIsOpen(!isOpen);
+  const handleSize = () => {
+    setIsMobile(window.innerWidth <= 950);
   };
 
-  return (
-    <>
-      <header className="header">
-        <h1 className="header__title">snap</h1>
-        <nav className="nav">
-          <div className={`menu ${isOpen ? 'open' : ''}`}>
-            <Dropdown />
-          </div>
-          <img
-            src={isOpen ? CloseIcon : MenuIcon}
-            alt="A menu icon"
-            className="menu__btn"
-            onClick={handleSideMenu}
-          />
-        </nav>
-      </header>
-    </>
-  );
+  useEffect(() => {
+    window.addEventListener('resize', handleSize);
+    return () => {
+      window.removeEventListener('resize', handleSize);
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log('Screen size is mobile: ', isMobile);
+  }, [isMobile]);
+
+  return <>{isMobile ? <HeaderMobile /> : <HeaderDesktop />}</>;
 }
