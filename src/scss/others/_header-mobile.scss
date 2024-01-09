@@ -14,10 +14,11 @@
       height: 100dvh;
       width: 65%;
       position: absolute;
-      top: -100%;
-      right: 0;
+      top: 3rem;
+      right: -100%;
       background-color: $clr-neutral-900;
       padding: 1.5rem;
+      transition: right 0.3s ease-in-out;
       .menu__content {
         display: flex;
         flex-direction: column;
@@ -69,7 +70,7 @@
       }
     }
     .open {
-      top: 3rem;
+      right: 0;
       z-index: 1;
     }
   }
