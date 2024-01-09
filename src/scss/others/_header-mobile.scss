@@ -35,6 +35,13 @@
             padding: 0.5em;
             background-color: $clr-neutral-900;
             gap: 1rem;
+            transition: color 0.3s ease-in-out;
+            &:hover {
+              color: $clr-neutral-100;
+            }
+            &:focus {
+              color: $clr-neutral-100;
+            }
           }
         }
       }
@@ -51,6 +58,13 @@
           border: none;
           border-radius: 1.25rem;
           cursor: pointer;
+          transition: color 0.3s ease-in-out;
+          &:hover {
+            color: $clr-neutral-100;
+          }
+          &:focus {
+            color: $clr-neutral-100;
+          }
         }
       }
     }

@@ -43,6 +43,13 @@ body {
   padding: 0.5em;
   background-color: hsl(0, 0%, 98%);
   gap: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+.header .nav .menu .menu__content .menu__list .menu__btn:hover {
+  color: hsl(0, 0%, 8%);
+}
+.header .nav .menu .menu__content .menu__list .menu__btn:focus {
+  color: hsl(0, 0%, 8%);
 }
 .header .nav .menu .menu__form {
   display: flex;
@@ -57,6 +64,13 @@ body {
   border: none;
   border-radius: 1.25rem;
   cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+.header .nav .menu .menu__form .form__btn:hover {
+  color: hsl(0, 0%, 8%);
+}
+.header .nav .menu .menu__form .form__btn:focus {
+  color: hsl(0, 0%, 8%);
 }
 .header .nav .open {
   top: 3rem;
@@ -137,12 +151,14 @@ body {
   }
 }
 .section .section__hero .hero__title {
-  font-size: 2.125rem;
+  font-size: 2.25rem;
+  margin-top: 3rem;
 }
 @media (min-width: 950px) {
   .section .section__hero .hero__title {
     font-size: 5rem;
     line-height: 5rem;
+    margin-top: 0;
   }
 }
 .section .section__hero .hero__desc {
@@ -161,6 +177,7 @@ body {
   background-color: hsl(0, 0%, 8%);
   border-radius: 1rem;
   cursor: pointer;
+  margin: 1rem auto 2.5rem auto;
 }
 @media (min-width: 950px) {
   .section .section__hero .hero__btn {
@@ -176,6 +193,11 @@ body {
   display: flex;
   gap: 3rem;
   padding: 0;
+}
+@media (max-width: 950px) {
+  .section .section__hero .icons {
+    padding: 1rem;
+  }
 }
 .section .section__hero .icons .icons__item {
   padding: 0;
