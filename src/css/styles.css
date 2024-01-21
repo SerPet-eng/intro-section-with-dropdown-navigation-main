@@ -13,6 +13,9 @@ body {
 .header .header__title {
   margin-right: auto;
 }
+.header .nav {
+  white-space: nowrap;
+}
 .header .nav .menu {
   display: flex;
   flex-direction: column;
@@ -24,6 +27,7 @@ body {
   background-color: hsl(0, 0%, 98%);
   padding: 1.5rem;
   transition: right 0.3s ease-in-out;
+  z-index: -1;
 }
 .header .nav .menu .menu__content {
   display: flex;

@@ -8,6 +8,7 @@
     margin-right: auto;
   }
   .nav {
+    white-space: nowrap;
     .menu {
       display: flex;
       flex-direction: column;
@@ -19,6 +20,7 @@
       background-color: $clr-neutral-900;
       padding: 1.5rem;
       transition: right 0.3s ease-in-out;
+      z-index: -1;
       .menu__content {
         display: flex;
         flex-direction: column;
